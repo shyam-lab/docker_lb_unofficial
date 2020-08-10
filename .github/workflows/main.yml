@@ -30,6 +30,7 @@ jobs:
 
         # Docker repository to tag the image with
         repository: shyamlab/lr_unofficial
-        tag_with_ref: true
-        push: ${{ startsWith(github.ref, 'refs/tags/') }}
+        tags: latest
+        #tag_with_ref: true
+        #push: ${{ startsWith(github.ref, 'refs/tags/') }}
         
