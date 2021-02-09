@@ -30,6 +30,5 @@ jobs:
 
         # Docker repository to tag the image with
         repository: shyamlab/lr_unofficial
-        tag_with_ref: true
-        tag_with_sha: true
+        tags: v0.0.1
         
