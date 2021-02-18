@@ -32,7 +32,7 @@ RUN cd /build \
 
 RUN cd /build \
  && R CMD build luna \
- && LUNA_BASE=/build/luna-base FFTW=/build/fftw3 R CMD INSTALL luna_0.25.1.tar.gz \
+ && LUNA_BASE=/build/luna-base FFTW=/build/fftw3 R CMD INSTALL luna_0.24.1.tar.gz \
  && mkdir /data \
  && mkdir /data1 \
  && mkdir /data2 \
