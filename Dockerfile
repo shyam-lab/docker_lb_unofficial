@@ -7,7 +7,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
  && apt-get install -y git g++ emacs r-base nano wget
- 
+
+RUN R -e "install.packages('git2r', repos='http://cran.rstudio.com/')"
 RUN R -e "install.packages('plotrix', repos='http://cran.rstudio.com/')"
 RUN R -e "install.packages('geosphere', repos='http://cran.rstudio.com/')"
 
